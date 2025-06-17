@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --neuro-primary: #6a4c93;
+    --neuro-secondary: #8a5a44;
+    --neuro-light: #f8f9fa;
+    --neuro-dark: #343a40;
+    --neuro-success: #28a745;
+    --neuro-info: #17a2b8;
+    --neuro-warning: #ffc107;
+    --neuro-danger: #dc3545;
+    --neuro-bg: #f5f3f7;
+    --primary-color: #a089c0;
+    --accent-color: #5a3c83;
+    --text-color: #343a40;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--neuro-bg);
+    font-family: "Playfair Display", "Cormorant Garamond", serif;
+    padding-bottom: 70px;
+    margin: 0;
+}
+
+.container-int {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Container principal do cabeçalho */
+.header-caixa {
+    background-color: var(--neuro-primary);
+    color: white;
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+}
+
+/* Imagem do cérebro (logo) */
+.header-caixa img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Título "Neurobank" */
+.titulo-header {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+/* Caixa do usuário */
+.caixa-usuario {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    padding-left: 80px;
+}
+
+/* Ícone de usuário */
+.caixa-usuario i {
+    font-size: 25px;
+}
+
+/* Cards */
+.blocos-dados {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.titulo-blocos {
+    font-size: 20px;
+    color: var(--neuro-dark);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Saldo */
+.saldo {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--neuro-primary);
+    margin-bottom: 0.25rem;
+}
+
+.dados-conta {
+    font-size: 15px;
+    color: var(--neuro-secondary);
+    margin-bottom: 0;
+}
+
+/* Seções */
+.titulo-acoes {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--neuro-primary);
+    margin-bottom: 1rem;
+}
+
+/* Botões de ação */
+.neuro-btn-action {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 5px;
+    color: var(--neuro-primary);
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.neuro-btn-action:hover {
+    background-color: #f0e6ff;
+}
+
+/* Categorias */
+.neuro-category-card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.neuro-category-icon {
+    font-size: 20px;
+    color: var(--neuro-primary);
+    margin-bottom: 0.5rem;
+}
+
+.neuro-category-title,
+.neuro-category-amount {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.neuro-category-amount {
+    color: var(--neuro-secondary);
+}
+
+.neuro-progress {
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.neuro-progress-bar {
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--neuro-primary);
+}
+
+/* Caixa geral da lista */
+.neuro-transaction-list {
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Cada item da transação */
+.neuro-transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Último item sem borda inferior */
+.neuro-transaction-item:last-child {
+    border-bottom: none;
+}
+
+/* Ícone + título */
+.transaction-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #5e3b94;
+    /* Roxo */
+}
+
+/* Valor e hora */
+.transaction-details {
+    text-align: right;
+    font-size: 10px;
+    color: #333;
+}
+
+/* Valor (destaque) */
+.transaction-amount {
+    font-weight: bold;
+}
+
+/* Hora */
+.transaction-time {
+    color: #888;
+    font-size: 8px;
+}
+
+
+/* Recursos especiais */
+.special-features {
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feature-card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.impulse-alert {
+    background-color: #FFC0CB;
+}
+
+.neuro-safe {
+    background-color: #98FB98;
+}
+
+.neuro-ai {
+    background-color: #ADD8E6;
+}
+
+.feature-icon {
+    font-size: 20px;
+    color: var(--primary-color, #6a4c93);
+    margin-bottom: 8px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color, #6a4c93);
+    margin-bottom: 5px;
+}
+
+.feature-description {
+    font-size: 15px;
+    color: var(--text-color, #343a40);
+    margin-bottom: 10px;
+}
+
+.btn-feature {
+    background-color: var(--primary-color, #6a4c93);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 15px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-feature:hover {
+    background-color: var(--accent-color, #5a3c83);
+}
+
+/* Menu inferior */
+.neuro-navbar {
+    background-color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+.neuro-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--neuro-dark);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.neuro-nav-item i {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.neuro-nav-item.active {
+    color: var(--neuro-primary);
+    font-weight: 600;
+}
+
+/* Assistente Virtual */
+.virtual-assistant {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: var(--neuro-success);
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.assistant-icon {
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+.assistant-text {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-int {
+        padding: 0 10px;
+    }
+
+    .header-caixa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caixa-usuario {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .header-caixa img {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+    }
+
+    .titulo-header {
+        font-size: 1.8rem;
+        padding-left: 0;
+    }
+
+    .neuro-amount {
+        font-size: 1.75rem;
+    }
+
+    .titulo-acoes {
+        font-size: 1rem;
+    }
+
+    .feature-card {
+        padding: 12px;
+    }
+
+    .neuro-btn-action {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-header {
+        font-size: 1.3rem;
+    }
+
+    .feature-description {
+        font-size: 0.85rem;
+    }
+
+    .btn-feature {
+        font-size: 0.8rem;
+        padding: 5px 12px;
+    }
+
+    .transaction-details {
+        font-size: 0.8rem;
+    }
+
+    .transaction-time {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .header-caixa {
+        padding: 10px;
+    }
+
+    .caixa-usuario {
+        font-size: 0.85rem;
+        margin-top: 8px;
+    }
+
+    .header-caixa img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .saldo {
+        font-size: 1.5rem;
+    }
+
+    .titulo-acoes {
+        font-size: 0.95rem;
+    }
+
+    .neuro-nav-item {
+        font-size: 0.75rem;
+    }
+
+    .neuro-nav-item i {
+        font-size: 14px;
+    }
+
+    .feature-title {
+        font-size: 1rem;
+    }
+}

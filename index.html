@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurobank ‑ Banco Digital</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid container-int">
+
+        <!-- ===== Cabeçalho =================================================== -->
+        <header class="row header-caixa py-3">
+            < <div class="col-12 col-lg-6 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="./img/cerebro.png" alt="Logo Neurobank" class="me-2 rounded-circle">
+                </div>
+
+                <div>
+                    <h1 class="titulo-header m-1">
+                        Neurobank
+                    </h1>
+                </div>
+
+                <div class="caixa-usuario">
+                    <span class="me-5">Olá, Kauany</span>
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </div>
+    </div>
+    </header>
+
+    <!-- ===== Saldo ======================================================== -->
+    <section class="row blocos-dados mt-4">
+        <div class="col-12">
+            <div class="card blocos-dados">
+                <div class="card-body">
+                    <h2 class="card-title titulo-blocos"> Saldo Disponível
+                    </h2>
+                    <p class="saldo">
+                        R$ 2.000,00
+                    </p>
+                    <p class="dados-conta">
+                        Kauany Violin<br>Limite diário: R$ 6,99<br>AG 0001 C/C 12345‑6
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Supervisor =================================================== -->
+    <section class="row blocos-dados mt-4">
+        <div class="col-12">
+            <div class="card blocos-dados">
+                <div class="card-body">
+                    <h2 class="card-title titulo-blocos">Supervisão Responsável</h2>
+                    <p class="dados-conta">Simone Soares<br>Mãe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Ações rápidas =============================================== -->
+    <section class="row neuro-quick-actions mt-4">
+        <div class="col-12">
+            <h3 class="titulo-acoes">Ações Rápidas</h3>
+            <div class="row g-3">
+                <div class="col-4">
+                    <button class="btn neuro-btn-action">
+                        <i class="fas fa-exchange-alt fa-2x mb-2"></i>
+                        <span>PIX</span>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="btn neuro-btn-action">
+                        <i class="fas fa-money-bill-wave fa-2x mb-2"></i>
+                        <span>Depositar</span>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="btn neuro-btn-action">
+                        <i class="fas fa-piggy-bank fa-2x mb-2"></i>
+                        <span>Reservas</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Categorias =================================================== -->
+    <section class="row neuro-categories mt-4">
+        <div class="col-12">
+            <h3 class="titulo-acoes">Suas Categorias</h3>
+            <div class="row g-3">
+                <!-- === Cartão 1 -->
+                <div class="col-6">
+                    <div class="card neuro-category-card">
+                        <div class="card-body">
+                            <i class="fas fa-home neuro-category-icon"></i>
+                            <h4 class="neuro-category-title">Gastos Fixos</h4>
+                            <div class="neuro-progress">
+                                <div class="neuro-progress-bar" style="width:45%"></div>
+                            </div>
+                            <p class="neuro-category-amount">R$ 900,00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- === Cartão 2 -->
+                <div class="col-6">
+                    <div class="card neuro-category-card">
+                        <div class="card-body">
+                            <i class="fas fa-pills neuro-category-icon"></i>
+                            <h4 class="neuro-category-title">Medicamentos</h4>
+                            <div class="neuro-progress">
+                                <div class="neuro-progress-bar" style="width:30%"></div>
+                            </div>
+                            <p class="neuro-category-amount">R$ 600,00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- === Cartão 3 -->
+                <div class="col-6">
+                    <div class="card neuro-category-card">
+                        <div class="card-body">
+                            <i class="fas fa-book neuro-category-icon"></i>
+                            <h4 class="neuro-category-title">Estudos</h4>
+                            <div class="neuro-progress">
+                                <div class="neuro-progress-bar" style="width:15%"></div>
+                            </div>
+                            <p class="neuro-category-amount">R$ 300,00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- === Cartão 4 -->
+                <div class="col-6">
+                    <div class="card neuro-category-card">
+                        <div class="card-body">
+                            <i class="fas fa-gamepad neuro-category-icon"></i>
+                            <h4 class="neuro-category-title">Lazer</h4>
+                            <div class="neuro-progress">
+                                <div class="neuro-progress-bar" style="width:10%"></div>
+                            </div>
+                            <p class="neuro-category-amount">R$ 200,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Últimas transações ========================================== -->
+    <section class="row neuro-transactions mt-4 mb-5">
+        <div class="col-12">
+            <h3 class="titulo-acoes">Últimas Transações</h3>
+
+            <div class="card neuro-card">
+                <div class="card-body">
+                    <ul class="list-group neuro-transaction-list">
+
+                        <!-- Transação 1 -->
+                        <li
+                            class="list-group-item neuro-transaction-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-utensils me-3"></i>
+                                <span>SUBWAY AV CENTRO</span>
+                            </div>
+                            <div class="text-end">
+                                <p class="m-0">R$ 32,50</p>
+                                <small class="text-muted">21/12 - 17:42</small>
+                            </div>
+                        </li>
+
+                        <!-- Transação 2 -->
+                        <li
+                            class="list-group-item neuro-transaction-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-shopping-bag me-3"></i>
+                                <span>FIAP</span>
+                            </div>
+                            <div class="text-end">
+                                <p class="m-0">R$ 720,00</p>
+                                <small class="text-muted">04/06 - 15:01</small>
+                            </div>
+                        </li>
+
+                        <!-- Transação 3 -->
+                        <li
+                            class="list-group-item neuro-transaction-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-prescription-bottle me-3"></i>
+                                <span>DROGASIL</span>
+                            </div>
+                            <div class="text-end">
+                                <p class="m-0">R$ 86,80</p>
+                                <small class="text-muted">22/06 - 11:54</small>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== Recursos especiais ========================================= -->
+    <section class="special-features">
+        <div class="container">
+            <div class="row">
+
+                <!-- Alerta de impulso -->
+                <div class="col-12 mb-3">
+                    <div class="feature-card impulse-alert"><!-- Custom -->
+                        <div class="feature-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4 class="feature-title">Alerta de Impulso</h4>
+                        <p class="feature-description">Você realmente precisa de ação?</p>
+                        <button class="btn btn-feature">Continuar</button>
+                    </div>
+                </div>
+
+                <!-- Neuro Cofre -->
+                <div class="col-12 mb-3">
+                    <div class="feature-card neuro-safe">
+                        <div class="feature-icon"><i class="fas fa-piggy-bank"></i></div>
+                        <h4 class="feature-title">Neuro Cofre</h4>
+                        <p class="feature-description">Economize com segurança</p>
+                    </div>
+                </div>
+
+                <!-- Neuro IA -->
+                <div class="col-12 mb-3">
+                    <div class="feature-card neuro-ai">
+                        <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                        <h4 class="feature-title">Neuro IA</h4>
+                        <p class="feature-description">Chat: Escreva aqui se precisar de ajuda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Menu inferior =============================================== -->
+    <nav class="navbar fixed-bottom neuro-navbar">
+        <div class="container-fluid">
+            <div class="w-100 d-flex justify-content-around">
+                <a href="#" class="neuro-nav-item active"><i class="fas fa-home"></i><span>Início</span></a>
+                <a href="#" class="neuro-nav-item"><i class="fas fa-exchange-alt"></i><span>Transações</span></a>
+                <a href="#" class="neuro-nav-item"><i class="fas fa-chart-pie"></i><span>Relatórios</span></a>
+                <a href="#" class="neuro-nav-item"><i class="fas fa-cog"></i><span>Configurações</span></a>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!-- ===== Assistente Virtual (fora do container) ======================= -->
+    <div class="virtual-assistant">
+        <div class="assistant-icon"><i class="fas fa-comment-dots"></i></div>
+        <p class="assistant-text">Assistente Virtual</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
